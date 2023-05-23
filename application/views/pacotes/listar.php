@@ -1,1 +1,1 @@
-<h1>Listar</h1>
+<?php print_r($data['programaIntercambio']); ?>

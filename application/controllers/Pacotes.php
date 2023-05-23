@@ -1,17 +1,28 @@
 <?php
 
 use Application\core\Controller;
+use Application\models\Pack;
 
 class Pacotes extends Controller
 {
   public function index()
   {
-    $this->view('pacotes/index');
+    $ListPacks = $this->model('Pack');
+    $data = $ListPacks::findAll();
+    $this->view('pacotes/index', ['pacotes' => $data]);
   }
 
-  public function listar()
+  public function ver($id = null)
   {
-    $this->view('pacotes/listar');
-  }
+    if (is_numeric($id)) {
+      $ListPacks = $this->model('Pack');
+      $data = $ListPacks->findById($id);
 
+      print_r($data);
+
+      $this->view('pacotes/listar', ['listar', $data]);
+    } else {
+      $this->pageNotFound();
+    }
+  }
 }
