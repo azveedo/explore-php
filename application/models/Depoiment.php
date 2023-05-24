@@ -21,25 +21,4 @@ class Depoiment
     $result = $connection->executeQuery('SELECT * FROM depoimentos');
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
-
-  /**
-   * Este método busca um usuário armazenados na base de dados com um
-   * determinado ID
-   * @param    int     $id   Identificador único do usuário
-   *
-   * @return   array
-   */
-  public static function findById(int $id)
-  {
-    $connection = new Database();
-    $result = $connection->executeQuery(
-      'SELECT * FROM depoimentos WHERE idDepoimento = :ID LIMIT 1',
-      array(
-        ':ID' => $id
-      )
-    );
-
-    return $result->fetchAll(PDO::FETCH_ASSOC);
-  }
-
 }

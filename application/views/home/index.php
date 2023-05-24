@@ -30,23 +30,26 @@
               <div class="dados-depoimento">
                 <div class="box-textos">
                   <div class="d-flex">
-                    <?php foreach ($data['depoimentos'] as $depoimentos) ?>
-                    <h3>
-                      <?= $depoimentos['nomeUsuario'] ?>
-                    </h3>
-                    <ul>
-                      <li>
-                        <?= $depoimentos['cidade'] ?>
-                      </li>
-                      <li>
-                        <?= $depoimentos['pais'] ?>
-                      </li>
-                    </ul>
-                  </div>
+                    <?php foreach ($data['depoimentos'] as $depoimento) { ?>
+                      <h3>
+                        <?= $depoimento['nomeUsuario'] ?>
+                      </h3>
+                      <ul>
+                        <li>
+                          <?= $depoimento['cidade'] ?>
+                        </li>
+                        <li>
+                          <?= $depoimento['pais'] ?>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <p>
-                    <?= $depoimentos['depoimento'] ?>
-                  </p>
+                    <p>
+                      <?= $depoimento['depoimento'] ?>
+                    </p>
+
+                  <?php } ?>
+
 
                   <div class="box-avatar"
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/dDYRYivNzbI); background-repeat: no-repeat; background-size: cover;">
