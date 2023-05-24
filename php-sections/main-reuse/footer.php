@@ -9,20 +9,7 @@
           <li>Idiomas com foco em profissão</li>
           <li>Cursos especiais</li>
         </div>
-        <div class="col">
-          <li>Shop</li>
-          <li>Products</li>
-          <li>Digitals</li>
-          <li>FAQs</li>
-          <li>Reviews</li>
-        </div>
-        <div class="col">
-          <li>Projects</li>
-          <li>Outside</li>
-          <li>Fair Trade</li>
-          <li>Peace</li>
-          <li>Honest</li>
-        </div>
+
         <div class="col">
           <li>A EXPLORE</li>
           <li>Quem Somos</li>
