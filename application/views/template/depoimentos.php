@@ -11,7 +11,7 @@
             <div class="dados-depoimento">
               <div class="box-textos">
                 <div class="d-flex">
-                  <?php foreach ($testimonials['testimonials'] as $testimony) { ?>
+                  <?php foreach ($data['testimonials'] as $testimony) { ?>
                     <h3>
                       <?= $testimony['nomeUsuario'] ?>
                     </h3>
@@ -42,7 +42,7 @@
             <div class="dados-depoimento box-right">
               <div class="box-textos">
                 <div class="d-flex">
-                  <?php foreach ($testimonials['testimonials'] as $testimony) { ?>
+                  <?php foreach ($data['testimonials'] as $testimony) { ?>
                     <h3>
                       <?= $testimony['nomeUsuario'] ?>
                     </h3>
