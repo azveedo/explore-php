@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+require './application/autoload.php';
 
-<head>
-  <meta charset="utf-8">
-  <title>Simple Framework</title>
-</head>
+use Application\core\App;
+use Application\core\Controller;
 
-<body>
+$app = new App();
 
-  <?php
-  require './application/autoload.php';
-
-  use Application\core\App;
-  use Application\core\Controller;
-
-  $app = new App();
-
-  ?>
-</body>
-
-</html>
+?>

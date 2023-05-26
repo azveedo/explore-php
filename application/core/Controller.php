@@ -3,6 +3,7 @@
 namespace Application\core;
 
 //use Application\models\Users;
+use Application\models\Depoiment;
 
 /**
  * Esta classe é responsável por instanciar um model e chamar a view correta
@@ -30,10 +31,11 @@ class Controller
    * @param  string  $view   A view que será chamada (ou requerida)
    * @param  array   $data   São os dados que serão exibido na view
    */
-  public function view(string $view, $data = [])
+  public function view(string $view, $data = [], $bodyClass = '')
   {
-    return require './application/views/' . $view . '.php';
-
+    require './application/views/template/header.php';
+    require './application/views/' . $view . '.php';
+    require './application/views/template/footer.php';
   }
 
   /**

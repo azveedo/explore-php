@@ -3,6 +3,7 @@
 
    RewriteCond %{REQUEST_FILENAME}  -f [OR]
    RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_URI} !/public
    RewriteRule ^(.*)$ index.php [L,QSA]
 
 </IfModule>
