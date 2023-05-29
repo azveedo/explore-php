@@ -1,5 +1,5 @@
 <section class="motivos">
-  <div class="box-title-section">
+  <div class="box-title-section" style="margin-bottom: 40px";>
     <h5>motivos</h5>
     <h4>Por que tanta gente viaja com a Explore?</h4>
   </div>

@@ -2663,6 +2663,10 @@ body.estudoTrabalho .text {
   background: url("estudar_trabalhar.9a4798bc.png") 50% no-repeat;
 }
 
+body.cursoIdiomas.text {
+  background: url("idiomas.c170cc2e.png") 50% no-repeat;
+}
+
 .clouds {
   width: 100%;
   height: 100vh;

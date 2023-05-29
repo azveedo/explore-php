@@ -5,9 +5,9 @@
   </div>
   <div class="items">
     <div class="item">
-      <a href="./cursoIdiomas.html">
+      <a href="../cursosidiomas/">
         <div class="item-wrapper">
-          <img src="../assets/images/camera-wrapper.jpg" alt="pacote londres" />
+          <img src="https://source.unsplash.com/GyMIjpznBmY" alt="imagem de fundo cursar idiomas" />
           <div class="img-overlay"></div>
           <div class="item-copy">
             <div class="item-name">

@@ -28,13 +28,19 @@
 body {
   &.home {
     &.text {
-      background: url(../images/text-explore.png) no-repeat 50% 50%;
+      background: url(../../assets/images/text-explore.png) no-repeat 50% 50%;
     }
   }
 
   &.estudoTrabalho {
     .text {
       background: url(../images/estudar_trabalhar.png) no-repeat 50% 50%;
+    }
+  }
+
+  &.cursoIdiomas {
+    &.text {
+      background: url(../images/idiomas.png) no-repeat 50% 50%;
     }
   }
 }
