@@ -12,4 +12,18 @@ class CursosIdiomas extends Controller
     $packages = $Packages = $Packages::findAll();
     $this->view('cursosIdiomas/index',['testimonials' => $testimonials, 'pacotes' => $packages], 'cursosIdiomas');
   }
+
+  public function ver($id = null)
+  {
+    if (is_numeric($id)) {
+      $Packages = $this->model('Pack');
+      $data = $Packages->findById($id);
+
+      print_r($data);
+
+      $this->view('cursosIdiomas/show',['testimonials' => $data, 'pacotes' => $data]);
+    } else {
+      $this->pageNotFound();
+    }
+  }
 }
