@@ -26,8 +26,6 @@
                 <a href="./index.html">pagina inicial</a>
                 <a href="#cards-packs">pacotes</a>
                 <a href="#">nós</a>
-                <a href="#">sobre</a>
-                <a href="./login.html">minha conta</a>
               </div>
               <div class="menu-right">
                 <div id="menu-toggle-btn">
