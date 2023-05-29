@@ -21,4 +21,10 @@ class Depoiment
     $result = $connection->executeQuery('SELECT * FROM depoimentos');
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
+
+  public static function findOne(){
+    $connection = new Database();
+    $result = $connection->executeQuery('SELECT * FROM depoimentos WHERE idDepoimento ORDER BY RAND() LIMIT 1');
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
 }

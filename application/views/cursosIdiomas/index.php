@@ -32,8 +32,11 @@
                                         <div class="d-flex">
                                             <h3>General Spanish ✦</h3>
                                         </div>
+                                        <?php foreach ($data['pacotes'] as $package) {?>
 
-                                        <p>  O Curso de General Spanish é ideal para aqueles que buscam aprender ou aprimorar o idioma espanhol.As aulas desse formato de curso são completas. Durante o período de intercâmbio, os professores trabalharão no desenvolvimento das habilidades de forma integrada.Isso quer dizer que durante as aulas todos os módulos de aprendizado (fala, escrita, audição e leitura) serão parte integrante do plano de estudos, oferecendo uma base consistente para a sua experiência nas escolas.</p>
+                                        <p><?= $package['descricao']?></p>
+
+                                        <?php } ?>
 
 
                                         <div class="btn-anchor-carousel">

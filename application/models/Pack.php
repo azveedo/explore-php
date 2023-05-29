@@ -22,6 +22,13 @@ class Pack
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 
+    public static function findOnePack()
+  {
+    $connection = new Database();
+    $result = $connection->executeQuery('SELECT * FROM programaIntercambio WHERE idPrograma = :ID LIMIT 1');
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   /**
    * Este método busca um usuário armazenados na base de dados com um
    * determinado ID
