@@ -50,9 +50,6 @@
                   Explore, compostas por uma equipe de brasileiros, que dão atendimento especializado e exclusivo aos
                   nossos intercambistas no destino e oferecem um calendário completo de eventos, walking tours,
                   orientações pós-embarque e renovações de pacotes. </p>
-                <div class="btn-anchor-carousel">
-                  <a href="/">saiba mais</a>
-                </div>
               </div>
             </div>
           </div>
@@ -70,9 +67,6 @@
                 <p> Todas as nossas acomodações são super bem localizadas, seja em partes centrais ou perto de estações
                   de metrô e/ou pontos de ônibus. Possuindo toda a infraestrutura que o intercambista precisa no
                   intercâmbio. </p>
-                <div class="btn-anchor-carousel">
-                  <a href="/">saiba mais</a>
-                </div>
               </div>
             </div>
           </div>

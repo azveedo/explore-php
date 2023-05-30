@@ -9,8 +9,9 @@ class CursosIdiomas extends Controller
     $Testimony = $this->model('Depoiment');
     $Packages = $this->model('Pack');
     $testimonials = $Testimony::findOne();
-    $packages = $Packages = $Packages::findAll();
-    $this->view('cursosIdiomas/index',['testimonials' => $testimonials, 'pacotes' => $packages], 'cursosIdiomas');
+    $testimonials1 = $Testimony::findTwo();
+    $packages = $Packages = $Packages::findOnePack();
+    $this->view('cursosIdiomas/index',['testimonials' => $testimonials, 'pacotes' => $packages, 'testimonials1' => $testimonials1], 'cursosIdiomas');
   }
 
   public function ver($id = null)

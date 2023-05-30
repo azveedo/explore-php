@@ -13,9 +13,7 @@
         <div class="col">
           <li>A EXPLORE</li>
           <li>Quem Somos</li>
-          <li>Lojas</li>
           <li>Fale Conosco</li>
-          <li>Trabalhe Conosco</li>
           <li>FAQ</li>
         </div>
       </div>
