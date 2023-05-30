@@ -1,5 +1,4 @@
 import "./assets/css/style.scss";
-console.log("savdyasgd");
 
 import {
   createParallax,

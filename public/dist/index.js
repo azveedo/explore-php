@@ -560,7 +560,6 @@ function hmrAccept(bundle, id) {
 var _styleScss = require("./assets/css/style.scss");
 var _components = require("./components");
 var _selectors = require("./config/selectors");
-console.log("savdyasgd");
 function runApp() {
     (0, _components.createParallax)();
     (0, _components.animateMenu)((0, _selectors.selectors).btnMobile);

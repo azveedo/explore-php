@@ -42,25 +42,27 @@
             <div class="dados-depoimento box-right">
               <div class="box-textos">
                 <div class="d-flex">
-                  <?php foreach ($data['testimonials'] as $testimony) { ?>
+                  <?php foreach ($data['testimonials1'] as $testimony1) { ?>
                     <h3>
-                      <?= $testimony['nomeUsuario'] ?>
+                      <?= $testimony1['nomeUsuario'] ?>
                     </h3>
                     <ul>
                       <li>
-                        <?= $testimony['cidade'] ?>
+                        <?= $testimony1['cidade'] ?>
                       </li>
                       <li>
-                        <?= $testimony['pais'] ?>
+                        <?= $testimony1['pais'] ?>
                       </li>
                     </ul>
                   </div>
                   <p>
-                    <?= $testimony['depoimento'] ?>
+                    <?= $testimony1['depoimento'] ?>
                   </p>
-                <?php } ?>
+
                 <div class="box-avatar"
                   style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/MChSQHxGZrQ); background-repeat: no-repeat; background-size: cover;">
+
+                  <?php } ?>
                 </div>
               </div>
             </div>
