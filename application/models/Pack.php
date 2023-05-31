@@ -25,7 +25,7 @@ class Pack
     public static function findOnePack()
   {
     $connection = new Database();
-    $result = $connection->executeQuery('SELECT * FROM programaIntercambio WHERE idPrograma = :ID LIMIT 1');
+    $result = $connection->executeQuery('SELECT * FROM programaIntercambio WHERE idPrograma =');
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 

@@ -331,6 +331,6 @@
             </div>
         </section>
 
-        <?php require './application/views/template/depoimentos.php'?>
+        <?php require './application/views/template/cards-packs.php' ?>
 
         <?php require './application/views/template/form-question.php'?>

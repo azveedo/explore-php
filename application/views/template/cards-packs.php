@@ -7,7 +7,7 @@
     <div class="item">
       <a href="../cursosidiomas/">
         <div class="item-wrapper">
-          <img src="https://source.unsplash.com/GyMIjpznBmY" alt="imagem de fundo cursar idiomas" />
+          <img src="./public/assets/images/camera-wrapper.jpg" alt="imagem de fundo cursar idiomas" />
           <div class="img-overlay"></div>
           <div class="item-copy">
             <div class="item-name">
@@ -22,7 +22,7 @@
     <div class="item">
       <a href="./estudoTrabalho.html">
         <div class="item-wrapper">
-          <img src="../assets/images/writing-wrapper.jpg" alt="pacote canadá" />
+          <img src="./public/assets/images/writing-wrapper.jpg" alt="pacote canadá" />
           <div class="img-overlay"></div>
           <div class="item-copy">
             <div class="item-name">
@@ -37,7 +37,7 @@
     <div class="item">
       <a href="./idiomaFocoProfissoes.html">
         <div class="item-wrapper">
-          <img src="../assets/images/desert-wrapper.jpg" alt="pacote irlanda" />
+          <img src="./public/assets/images/desert-wrapper.jpg" alt="pacote irlanda" />
           <div class="img-overlay"></div>
           <div class="item-copy">
             <div class="item-name">
@@ -52,7 +52,7 @@
     <div class="item">
       <a href="./cursosEspeciais.html"">
               <div class=" item-wrapper">
-        <img src="../assets/images/ice-wrapper.jpg" alt="pacote holanda" />
+        <img src="./public/assets/images/ice-wrapper.jpg" alt="pacote holanda" />
         <div class="img-overlay"></div>
         <div class="item-copy">
           <div class="item-name">
