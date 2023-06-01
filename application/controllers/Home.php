@@ -10,11 +10,9 @@ class Home extends Controller
   public function index()
   {
     $Testimony = $this->model('Depoiment');
-    $testimonials = $Testimony::findOne();
+    $testimonials = $Testimony::findLast(2);
 
-    $testimonials1 = $Testimony::findTwo();
-
-    $this->view('home/index', ['testimonials' => $testimonials, 'testimonials1' => $testimonials1], 'home');
+    $this->view('home/index', ['testimonials' => $testimonials], 'home');
   }
 
 

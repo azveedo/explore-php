@@ -23,9 +23,9 @@
               <div class="menu-left"> ✦ <div class="menu-brand">explore.</div>
               </div>
               <div id="menu-center" role="menu">
-                <a href="./index.html">pagina inicial</a>
+                <a href="/">pagina inicial</a>
                 <a href="#cards-packs">pacotes</a>
-                <a href="#">nós</a>
+                <a href="quemsomos">nós</a>
               </div>
               <div class="menu-right">
                 <div id="menu-toggle-btn">
@@ -33,7 +33,7 @@
                     aria-expanded="false">Menu <span id="hamburguer"></span>
                   </button>
                 </div>
-                <a href="./login.html" class="account">minha conta </a>
+                <a href="login" class="account">minha conta </a>
               </div>
             </div>
             <div class="menu-expand">

@@ -9,7 +9,7 @@
           <div class="user-form-login">
             <div class="form-content">
               <h1>Usuário</h1>
-              <form action="../../controllers/Cadastro.php" method="post">
+              <form action="cadastro.php" method="post">
                 <div class="input-box">
                   <label>Email *</label>
                   <input type="text" name="email" id="email" required>
@@ -327,7 +327,7 @@
           </div>
         </form>
           <div class="input-box">
-            <p>E aí, já tem uma conta? <a href="./login.html">Entrar</a>
+            <p>E aí, já tem uma conta? <a href="login">Entrar</a>
             </p>
           </div>
         </div>

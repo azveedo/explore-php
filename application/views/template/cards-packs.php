@@ -5,7 +5,7 @@
   </div>
   <div class="items">
     <div class="item">
-      <a href="../cursosidiomas/">
+      <a href="cursosIdiomas">
         <div class="item-wrapper">
           <img src="./public/assets/images/camera-wrapper.jpg" alt="imagem de fundo cursar idiomas" />
           <div class="img-overlay"></div>
@@ -20,7 +20,7 @@
     </div>
     <div class="divider"></div>
     <div class="item">
-      <a href="./estudoTrabalho.html">
+      <a href="estudo-trabalho-">
         <div class="item-wrapper">
           <img src="./public/assets/images/writing-wrapper.jpg" alt="pacote canadá" />
           <div class="img-overlay"></div>

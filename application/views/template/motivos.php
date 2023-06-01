@@ -38,6 +38,7 @@
             </div>
           </div>
         </div>
+        
         <div class="swiper-slide">
           <div class="item"
             style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/MChSQHxGZrQ); background-repeat: no-repeat; background-size: cover;">

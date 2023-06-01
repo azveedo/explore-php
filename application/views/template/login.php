@@ -24,7 +24,7 @@
                 <input type="submit" value="Entrar" name="btnEntrar">
               </div>
               <div class="input-box">
-                <p>E aí, não tem uma conta? <a href="./register.html">Registrar-se</a></p>
+                <p>E aí, não tem uma conta? <a href="cadastro">Registrar-se</a></p>
               </div>
             </form>
           </div>

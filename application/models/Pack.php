@@ -6,6 +6,20 @@ use Application\core\Database;
 use Exception;
 use PDO;
 
+function group_by($key, $array) {
+  $result = array();
+
+  foreach($array as $item) {
+    if(array_key_exists($key,$item)) {
+      $result[$item[$key]][] = $item;
+    } else {
+      $result[''][] = $item;
+    }
+  }
+
+  return $result;
+}
+
 class Pack
 {
   /** Poderiamos ter atributos aqui */
@@ -18,15 +32,26 @@ class Pack
   public static function findAll()
   {
     $connection = new Database();
-    $result = $connection->executeQuery('SELECT * FROM programaIntercambio');
+    $result = $connection->executeQuery('SELECT * FROM cursosIdiomas');
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 
     public static function findOnePack()
   {
     $connection = new Database();
-    $result = $connection->executeQuery('SELECT * FROM programaIntercambio WHERE idPrograma =');
+    $result = $connection->executeQuery('SELECT * FROM cursosIdiomas WHERE idCurso =');
     return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  public static function findByCategory($categories) {
+    $connection = new Database();
+
+    $result = $connection->executeQuery("SELECT * from cursosIdiomas WHERE categoria IN ($categories)");
+    $parsedResult = $result->fetchAll(PDO::FETCH_ASSOC);
+    $packagesByCategory = group_by('categoria', $parsedResult);
+
+    return $packagesByCategory;
+
   }
 
   /**
@@ -40,7 +65,7 @@ class Pack
   {
     $connection = new Database();
     $result = $connection->executeQuery(
-      'SELECT * FROM programaIntercambio WHERE idPrograma = :ID LIMIT 1',
+      'SELECT * FROM cursosIdiomas WHERE idCurso = :ID LIMIT 1',
       array(
         ':ID' => $id
       )

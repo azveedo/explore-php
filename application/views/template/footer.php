@@ -28,5 +28,8 @@
 </body>
 
 <script src="./public/dist/index.js" type="module"></script>
+        <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
 
 </html>
