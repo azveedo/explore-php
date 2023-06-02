@@ -20,7 +20,7 @@
     </div>
     <div class="divider"></div>
     <div class="item">
-      <a href="estudo-trabalho-">
+      <a href="estudoTrabalho">
         <div class="item-wrapper">
           <img src="./public/assets/images/writing-wrapper.jpg" alt="pacote canadá" />
           <div class="img-overlay"></div>
