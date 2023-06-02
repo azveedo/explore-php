@@ -4,17 +4,17 @@
       <div class="nav">
         <div class="col">
           <li>PROGRAMAS</li>
-          <li>Curso de idiomas</li>
-          <li>Estudo e trabalho</li>
-          <li>Idiomas com foco em profissão</li>
-          <li>Cursos especiais</li>
+          <li><a href="cursosIdiomas">Estudar Idiomas</a></li>
+          <li><a href="estudoTrabalho">Estudar e Trabalhar</a></li>
+          <li><a href="idiomaFocoProfissoes">Idimas com Foco em Profissões</a></li>
+          <li><a href="cursosEspeciais">Cursos Especiais</a></li>
         </div>
 
         <div class="col">
           <li>A EXPLORE</li>
-          <li>Quem Somos</li>
-          <li>Fale Conosco</li>
-          <li>FAQ</li>
+          <li><a href="quemsomos">Quem Somos?</a></li>
+          <li><a href="faleconosco">Fale Conosco</a></li>
+          <li><a href="faleconosco">FAQ</a></li>
         </div>
       </div>
       <div class="copyright">

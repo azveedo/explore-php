@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>estudar idiomas | explore.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./public/dist/index.css" />
+  <link rel="stylesheet" href="http://localhost:8888/explore-php/public/dist/index.css" />
 </head>
 
 <body class="<?php echo $bodyClass ?>">

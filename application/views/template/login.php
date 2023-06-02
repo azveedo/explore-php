@@ -5,7 +5,7 @@
         <div class="content-box">
           <div class="form-content">
             <h1>Entrar</h1>
-            <form action="../php/model/validacao.php" method="post">
+            <form action="login/entrar" method="post">
               <div class="input-box">
                 <label>Seu apelido ou email</label>
                 <input type="text" name="usuario" id="usuario" required>

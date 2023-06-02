@@ -14,6 +14,7 @@
         <?php 
             $spanishPackages = $data['pacotes']['espanhol'];
             $englishCourses = $data['pacotes']['ingles'];
+            $germanCourses = $data['pacotes']['alemao'];
         ?>
 
         <section class="motivos">
@@ -31,7 +32,7 @@
                     <div class="swiper-wrapper">
                         <?php foreach ($spanishPackages as $package):?>
                             <div class="swiper-slide">
-                                <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/FtCcXKZV2N4); background-repeat: no-repeat; background-size: cover;">
+                                <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= $package['linkImagem']?>); background-repeat: no-repeat; background-size: cover;">
                                     <div class="dados-depoimento box-right">
                                         <div class="box-textos-motivos">
                                             <div class="d-flex">
@@ -61,7 +62,7 @@
                     <div class="swiper-wrapper">
                         <?php foreach ($englishCourses as $package):?>
                             <div class="swiper-slide">
-                                <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/FtCcXKZV2N4); background-repeat: no-repeat; background-size: cover;">
+                                <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= $package['linkImagem']?>); background-repeat: no-repeat; background-size: cover;">
                                     <div class="dados-depoimento box-right">
                                         <div class="box-textos-motivos">
                                             <div class="d-flex">
@@ -88,23 +89,25 @@
             <div class="container">
                 <div id="carousel-idiomas-desktop" class="oneSlide swiperCarouselIdiomas">
                     <div class="swiper-wrapper">
+                        <?php foreach($germanCourses as $package):?>
                         <div class="swiper-slide">
-                            <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/G6RE_to6Lus); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                            <div class="item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= $package['linkImagem']?>); background-repeat: no-repeat; background-size: cover; background-position: center;">
                                 <div class="dados-depoimento box-right">
                                     <div class="box-textos-motivos">
-                                        <div class="d-flex">
-                                            <h3>General German ✦</h3>
-                                        </div>
+                                            <div class="d-flex">
+                                                <h3><?= $package['nomeCurso']?> ✦</h3>
+                                            </div>
 
-                                        <p> O curso de General German é ideal para quem quer aprender sobre a língua alemã, desde o estudo da gramática à conversação. Não importa qual o nível de conhecimento em alemão, temos cursos desde o mais básico até o mais avançado.As aulas desse formato de curso são completas. Durante o período de intercâmbio, os professores trabalharão no desenvolvimento das habilidades de forma integrada. Isso quer dizer que durante as aulas todos os módulos de aprendizado (fala, escrita, audição e leitura) serão parte integrante do plano de estudos.</p>
+                                            <p><?= $package['descricaoCurso']?></p>
 
-                                        <div class="btn-anchor-carousel">
-                                            <a href="cursosIdiomas/ver/<?= $package['idCurso']?>">saiba mais</a>
+                                            <div class="btn-anchor-carousel">
+                                                <a href="cursosIdiomas/ver/<?= $package['idCurso']?>">saiba mais</a>
+                                            </div>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                    <?php endforeach; ?>
                     </div>
                     
                 </div>

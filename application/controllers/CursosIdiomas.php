@@ -9,7 +9,7 @@ class CursosIdiomas extends Controller
     $Testimony = $this->model('Depoiment');
     $Package = $this->model('Pack');
     $testimonials = $Testimony::findLast(2);
-    $packagesByCategory = $Package::findByCategory('"ingles", "espanhol"');
+    $packagesByCategory = $Package::findByCategory('"ingles", "espanhol", "alemao"');
 
      $data = [
       'testimonials' => $testimonials, 
@@ -23,9 +23,14 @@ class CursosIdiomas extends Controller
   {
     if (is_numeric($id)) {
       $Packages = $this->model('Pack');
-      $data = $Packages->findById($id);
+      
+      $package = $Packages->findById($id);
 
-      $this->view('cursosIdiomas/show',['testimonials' => $data, 'pacotes' => $data]);
+      $data = [
+        'pacote' => $package
+      ];
+
+      $this->view('cursosIdiomas/show', $data);
     } else {
       $this->pageNotFound();
     }

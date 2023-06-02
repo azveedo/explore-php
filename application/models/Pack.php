@@ -71,7 +71,7 @@ class Pack
       )
     );
 
-    return $result->fetchAll(PDO::FETCH_ASSOC);
+    return $result->fetch(PDO::FETCH_ASSOC);
   }
 
 }

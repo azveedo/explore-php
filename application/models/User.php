@@ -22,6 +22,50 @@ class User
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function validaEmail($user)
+  {
+
+    $connection = new Database();
+
+    $result = $connection->executeQuery('select idUser from usuario where emailUser= :email', array(
+      ':email' => $user['email'],
+      ':senha' => $user['senha']
+    ));
+
+    if ($user['email']->rowCount() > 0) {
+      echo ($user['email']);
+    } else {
+      $this->create($user);
+    }
+
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  public function create($user)
+  {
+    $connection = new Database();
+
+    print_r($user);
+
+    $result = $connection->executeQuery(
+      'INSERT INTO usuario (nomeUser, emailUser, senhaUser, telefoneUser, paisUser, estadoUser, cidadeUser, bairroUser, ruaUser, numeroUser) VALUES (:nome, :email, :senha, :telefone, :pais, :estado, :cidade, :bairro, :rua, :numero)',
+      array(
+        ':nome' => $user['nome'],
+        ':email' => $user['email'],
+        ':senha' => $user['senha'],
+        ':telefone' => $user['telefone'],
+        ':pais' => $user['pais'],
+        ':estado' => $user['estado'],
+        ':cidade' => $user['cidade'],
+        ':bairro' => $user['bairro'],
+        ':rua' => $user['rua'],
+        ':numero' => $user['numero']
+      )
+    );
+
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   /**
    * Este método busca um usuário armazenados na base de dados com um
    * determinado ID
