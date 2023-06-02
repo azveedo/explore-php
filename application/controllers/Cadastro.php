@@ -1,7 +1,6 @@
 <?php
 
 use Application\core\Controller;
-use Application\models\Conexao;
 use Application\models\User;
 
 class Cadastro extends Controller
@@ -45,15 +44,15 @@ class Cadastro extends Controller
     
     // Segunda lição: transformar a variável
     // $baseUrl em uma variável global
-    
+
     if(empty($_POST['usuario'])) {
       header("Location: http://localhost:8888/explore-php/cadastro");
-
       die();
     }
 
     try {
       $User->create($registeringUser);
+      // $User->validateEmail($registeringUser);
       $this->view('cadastro/sucesso');
     } catch(Exception $error) {
       $this->view('cadastro/erro');

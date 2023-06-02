@@ -22,14 +22,12 @@ class User
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 
-  public function validaEmail($user)
+  public function validateEmail($user)
   {
-
     $connection = new Database();
 
-    $result = $connection->executeQuery('select idUser from usuario where emailUser= :email', array(
+    $result = $connection->executeQuery('select idUser from usuario where emailUser = :email', array(
       ':email' => $user['email'],
-      ':senha' => $user['senha']
     ));
 
     if ($user['email']->rowCount() > 0) {
