@@ -1,5 +1,5 @@
 <section class="form-questions-section">
-  <form action="/" method="post">
+  <form action="https://formsubmit.co/3a9120b7138e7bcf30d683d3f8bca8e1" method="POST">
     <div class="box-flex-texts-img">
       <div class="box-container-texts">
         <div class="box-texts">
@@ -11,20 +11,20 @@
           <div class="box-container-forms">
             <div class="grid-container-box-50">
               <div class="box-fields-box-50">
-                <input type="text" placeholder="Nome" required="required" type="text" id="" aria-required="true" />
+                <input name="name" type="text" placeholder="Nome" required="required" type="text" id="" aria-required="true" />
               </div>
               <div class="box-fields-box-50">
-                <input name="" placeholder="Telefone/Whatsapp" required="required" type="text" id="" maxlength="15"
+                <input name="phone" placeholder="Telefone/Whatsapp" required="required" type="text" id="" maxlength="15"
                   aria-required="true" />
               </div>
             </div>
             <div class="box-fields">
-              <input name="" placeholder="E-mail" required="required" type="text" id="" aria-required="true"
+              <input name="email" placeholder="E-mail" required="required" type="text" id="" aria-required="true"
                 aria-invalid="true" />
             </div>
             <div class="select-field">
               <div class="box-fields">
-                <select name="" placeholder="Selecione um programa" required="required" id="" aria-required="true">
+                <select name="program" placeholder="Selecione um programa" required="required" id="" aria-required="true">
                   <option value="">Selecione um programa</option>
                   <option value="2">Estudar e Trabalhar</option>
                   <option value="1">Estudar Idiomas</option>
@@ -33,14 +33,14 @@
               </div>
               <div class="grid-container-box-50">
                 <div class="box-fields">
-                  <select name="" placeholder="Selecione uma unidade" required="required" id="" aria-required="true"
+                  <select name="company" placeholder="Selecione uma unidade" required="required" id="" aria-required="true"
                     aria-invalid="true">
                     <option value="">Selecione uma unidade</option>
                     <option value="1">Franco da Rocha</option>
                   </select>
                 </div>
                 <div class="box-fields">
-                  <select name="" placeholder="Selecione como conheceu a Explore" required="required" id=""
+                  <select name="search" placeholder="Selecione como conheceu a Explore" required="required" id=""
                     aria-required="true" aria-invalid="true">
                     <option value="">Selecione como conheceu a Explore</option>
                     <option value="">Cartaz</option>
@@ -63,7 +63,7 @@
                 </div>
               </div>
               <div class="box-fields">
-                <select name="" placeholder="Selecionar quando pretende embarcar" required="required" id=""
+                <select name="boarding" placeholder="Selecionar quando pretende embarcar" required="required" id=""
                   aria-required="true" aria-invalid="true">
                   <option value="">Selecionar quando pretende embarcar</option>
                   <option value="65">Semestre 1/2023</option>
@@ -76,10 +76,14 @@
                 <div class="textarea">
                   <p tabindex="0">Detalhe mais os seus planos para o seu intercâmbio: quando pretende viajar, para onde
                     quer ir, o que pretende fazer...</p>
-                  <textarea name="" placeholder="Mensagem" required="required" cols="30" rows="6" id=""
+                  <textarea name="subject" placeholder="Mensagem" required="required" cols="30" rows="6" id=""
                     aria-required="true"></textarea>
                 </div>
               </div>
+              <input type="hidden" name="_subject" value="Chegou dúvida do usuário!">
+              <input type="hidden" name="_autoresponse" value="Nós, da equipe Explore, já recebemos seu e-mail e logo responderemos! Fique de olho na caixa de SPAM!">
+              <input type="hidden" name="_next" value="http://yourdomain.co/thanks.html">
+              <input type="hidden" name="_template" value="table">
               <button type="submit" class="btn-standard">Enviar mensagem</button>
             </div>
           </div>
