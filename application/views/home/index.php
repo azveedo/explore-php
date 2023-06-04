@@ -14,7 +14,6 @@
 
 <?php require './application/views/template/cards-packs.php';?>
 
-
 <?php require './application/views/template/depoimentos.php'; ?>
 
 <section class="main-content">

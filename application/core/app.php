@@ -1,6 +1,8 @@
 <?php
 namespace Application\core;
 
+$test = 'test';
+
 /**
  * Esta classe é responsável por obter da URL o controller, método (ação) e os parâmetros
  * e verificar a existência dos mesmo.

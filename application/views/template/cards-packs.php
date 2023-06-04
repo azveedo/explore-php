@@ -35,7 +35,7 @@
     </div>
     <div class="divider"></div>
     <div class="item">
-      <a href="./idiomaFocoProfissoes.html">
+      <a href="idiomaFocoProfissoes">
         <div class="item-wrapper">
           <img src="./public/assets/images/desert-wrapper.jpg" alt="pacote irlanda" />
           <div class="img-overlay"></div>
@@ -50,7 +50,7 @@
     </div>
     <div class="divider"></div>
     <div class="item">
-      <a href="./cursosEspeciais.html"">
+      <a href="cursosEspeciais"">
               <div class=" item-wrapper">
         <img src="./public/assets/images/ice-wrapper.jpg" alt="pacote holanda" />
         <div class="img-overlay"></div>

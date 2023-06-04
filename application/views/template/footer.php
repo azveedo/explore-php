@@ -6,7 +6,7 @@
           <li>PROGRAMAS</li>
           <li><a href="cursosIdiomas">Estudar Idiomas</a></li>
           <li><a href="estudoTrabalho">Estudar e Trabalhar</a></li>
-          <li><a href="idiomaFocoProfissoes">Idimas com Foco em Profissões</a></li>
+          <li><a href="idiomaFocoProfissoes">Idiomas com Foco em Profissões</a></li>
           <li><a href="cursosEspeciais">Cursos Especiais</a></li>
         </div>
 

@@ -1,46 +1,44 @@
 <?php
 
 use Application\core\Controller;
-use Application\models\Conexao;
 use Application\models\User;
+use Application\utils\Env;
 
 class Login extends Controller
 {
   public function index()
   {
-    $this->view('login/index',[''], 'login');
-  }
-
-    public function entrar(){
-    $User = $this->model('User');
-
-    $loginUser = array(
-      'email' => addslashes($_POST['email']),
-      'senha' => addslashes($_POST['senha'])
-    );
-
-    // Criar um helper pra validar se vocês
-    // está no localhost ou não
-    // e retornar um valor dinâmico
-
-    /// $isLocalhost = isLocalhost();
-    // $baseUrl = $isLocalhost ? 'http://localhost:8888/explore-php' : 'http://explore-php.com.br';
-    // header("Location: $baseUrl/cadastro");
-    
-    // Segunda lição: transformar a variável
-    // $baseUrl em uma variável global
-    
-    if(empty($_POST['usuario'])) {
-      header("Location: http://localhost:8888/explore-php/login");
-
+    if(Env::hasLoggedUser()) {
+      header('Location: '.Env::baseUrl().'/dashboard');
       die();
     }
 
+    $this->view('login/index',[''], 'login', false);
+  }
+
+  public function entrar() {
+    $User = $this->model('User');
+    
+    if(empty($_POST['usuario'])) {
+      header('Location: '.Env::baseUrl().'/login');
+      die();
+    }
+
+    $email = addslashes($_POST['usuario']);
+    $password = addslashes($_POST['senha']);
+
     try {
-      $User->entrar($loginUser);
-      $this->view('login/sucesso');
+      $User->entrar($email, $password);
+      header('Location: '.Env::baseUrl().'/dashboard');
+      die();
     } catch(Exception $error) {
       $this->view('login/erro');
     }
+  }
+
+  public function logout() {
+    setcookie("_explore_session", "", time() + (86400 * 30), "/");
+    header('Location: '.Env::baseUrl().'/login');
+      die();
   }
 }

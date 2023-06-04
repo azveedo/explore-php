@@ -1,3 +1,7 @@
+<?php 
+  use Application\utils\Env;
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -33,7 +37,7 @@
                     aria-expanded="false">Menu <span id="hamburguer"></span>
                   </button>
                 </div>
-                <a href="login" class="account">minha conta </a>
+                <a href="<?php echo Env::baseUrl(); ?>/login" class="account">minha conta </a>
               </div>
             </div>
             <div class="menu-expand">

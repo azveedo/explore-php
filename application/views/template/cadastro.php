@@ -1,7 +1,7 @@
 <div class="main-content">
       <section class="img-bg">
         <div class="img-bg-div">
-          <img src="../assets/images/bg-login.jpg" alt="">
+          <img src="./public/assets/images/bg-login.jpg" alt="">
         </div>
       </section>
       <section class="content-box-form">

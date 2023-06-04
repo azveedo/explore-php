@@ -58,9 +58,6 @@
                 </div>
               </li>
             </ul>
-            <div class="btn-anchor-carousel">
-              <a href="faleconosco">peça seu orçamento</a>
-            </div>
           </div>
       </div>
       <?php endforeach; ?>

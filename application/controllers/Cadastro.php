@@ -2,12 +2,13 @@
 
 use Application\core\Controller;
 use Application\models\User;
+use Application\utils\Env;
 
 class Cadastro extends Controller
 {
   public function index()
   {
-    $this->view('cadastro/index',['' => ''], 'cadastro');
+    $this->view('cadastro/index',['' => ''], 'cadastro', false);
   }
 
   // public function sucesso() {
@@ -34,28 +35,16 @@ class Cadastro extends Controller
       'numero' => addslashes($_POST['numero'])
     );
 
-    // Criar um helper pra validar se vocês
-    // está no localhost ou não
-    // e retornar um valor dinâmico
-
-    /// $isLocalhost = isLocalhost();
-    // $baseUrl = $isLocalhost ? 'http://localhost:8888/explore-php' : 'http://explore-php.com.br';
-    // header("Location: $baseUrl/cadastro");
-    
-    // Segunda lição: transformar a variável
-    // $baseUrl em uma variável global
-
     if(empty($_POST['usuario'])) {
-      header("Location: http://localhost:8888/explore-php/cadastro");
+      header('Location: '.Env::baseUrl().'/cadastro');
       die();
     }
 
     try {
       $User->create($registeringUser);
-      // $User->validateEmail($registeringUser);
-      $this->view('cadastro/sucesso');
+      $this->view('cadastro/sucesso', [], 'sucesso', false);
     } catch(Exception $error) {
-      $this->view('cadastro/erro');
+      $this->view('cadastro/erro', [], 'erro', false);
     }
   }
 }

@@ -9,7 +9,7 @@ class EstudoTrabalho extends Controller
     $Testimony = $this->model('Depoiment');
     $Package = $this->model('Pack');
     $testimonials = $Testimony::findLast(2);
-    $packagesByCategory = $Package::findByCategory('"ingles", "espanhol", "alemao"');
+    $packagesByCategory = $Package::findByCategory('"australia", "canadá", "nova zelândia", "dubai", "irlanda"', 'estudotrabalho');
 
      $data = [
       'testimonials' => $testimonials, 
@@ -24,13 +24,13 @@ class EstudoTrabalho extends Controller
     if (is_numeric($id)) {
       $Packages = $this->model('Pack');
       
-      $package = $Packages->findById($id);
+      $package = $Packages->findById($id, 'estudotrabalho');
 
       $data = [
         'pacote' => $package
       ];
 
-      $this->view('estudoTrabalho/show', $data);
+      $this->view('estudoTrabalho/show', $data, 'details');
     } else {
       $this->pageNotFound();
     }

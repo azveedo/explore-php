@@ -12,7 +12,7 @@ class Home extends Controller
     $Testimony = $this->model('Depoiment');
     $testimonials = $Testimony::findLast(2);
 
-    $this->view('home/index', ['testimonials' => $testimonials], 'home');
+    $this->view('home/index', ['testimonials' => $testimonials], 'home', true);
   }
 
 

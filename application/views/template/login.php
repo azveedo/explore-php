@@ -1,6 +1,6 @@
 <section>
         <div class="img-bg">
-          <img src="../assets/images/bg-login.jpg">
+          <img src="./public/assets/images/bg-login.jpg">
         </div>
         <div class="content-box">
           <div class="form-content">
