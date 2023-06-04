@@ -18,7 +18,11 @@
     </div>
   </form>
 <?php else: ?>
-  Por favor faça o <a href="<?php echo Env::baseUrl(); ?>/login">login</a> aqui para comprar.
+<div class="container" style="margin-top: 40px;">
+  <div class="centeringText">
+    <h3>Por favor faça o <a class="loginBtn" href="<?php echo Env::baseUrl(); ?>/login">login</a> aqui para comprar.</h3>
+  </div>
+</div>
 <?php endif; ?>
 </div>
 
@@ -32,8 +36,3 @@
 
 
 <?php require './application/views/template/form-question.php'?>
-
-
-
-
-
